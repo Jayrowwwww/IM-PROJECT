@@ -10,6 +10,8 @@ export default function TeamCards(){
                         <Image 
                             src={member.image} 
                             alt={member.name} 
+                            width={128}
+                            height={128}
                             className="w-32 h-32 rounded-full object-cover border-2 border-white" />
                         <h3 className="text-xl font-balkind">{member.name}</h3>
                         <p className="text-sm font-montserrat text-neutral-400">{member.position}</p>

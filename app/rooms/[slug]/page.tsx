@@ -20,6 +20,8 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
                     <Image 
                         src={room.image} 
                         alt={room.name} 
+                        width={800}
+                        height={600}
                         className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#04080a] via-[#04080a]/40 to-transparent"></div>
