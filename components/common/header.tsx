@@ -8,9 +8,9 @@ export default function Header() {
             <Link href="/" className="hover:opacity-80 transition-opacity">
                 <h1 className="text-2xl font-balkind tracking-wide">Grand Nancy Hotel</h1>
             </Link>
-            <div className="flex justify-center items-center gap-[4rem]">
+            <div className="flex justify-center items-center gap-16">
                 <nav className="hidden md:flex gap-8 font-montserrat text-xs tracking-[0.15em] uppercase">
-                    <Link href="/#home" className="hover:text-neutral-300 transition-colors">Home</Link>
+                    <Link href="/" className="hover:text-neutral-300 transition-colors">Home</Link>
                     <Link href="/rooms" className="hover:text-neutral-300 transition-colors">Rooms</Link>
                     <Link href="/#about" className="hover:text-neutral-300 transition-colors">About</Link>
                 </nav>

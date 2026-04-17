@@ -67,6 +67,17 @@ export default function BookingModal({ isOpen, onClose, roomName }: BookingModal
               <option className="bg-[#0b1821]">4+ Guests</option>
             </select>
           </div>
+          <div className="flex flex-col gap-2">
+            <label className="text-xs uppercase tracking-widest text-neutral-400">Room Type</label>
+            <select className="bg-transparent border-b border-white/20 pb-2 text-neutral-300 focus:outline-none focus:border-white transition-colors appearance-none">
+              <option className="bg-[#0b1821]">Standard Room</option>
+              <option className="bg-[#0b1821]">Deluxe Room</option>
+              <option className="bg-[#0b1821]">Executive Suite</option>
+              <option className="bg-[#0b1821]">Presidential Suite</option>
+              <option className="bg-[#0b1821]">Family Suite</option>
+              <option className="bg-[#0b1821]">Honeymoon Suite</option>
+            </select>
+          </div>
           <button type="submit" className="mt-4 bg-white text-black py-3 px-8 text-xs uppercase tracking-widest hover:bg-neutral-200 transition duration-300 w-full">
             Confirm Booking
           </button>

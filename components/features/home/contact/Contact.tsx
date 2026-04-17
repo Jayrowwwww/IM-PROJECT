@@ -8,7 +8,7 @@ export default function Contact() {
                 <span className="text-sm font-montserrat tracking-[0.2em] text-neutral-400 uppercase">Get in touch</span>
                 <h2 className="text-5xl font-balkind">Contact Us</h2>
                 <p className="font-montserrat text-neutral-400 font-light max-w-2xl mx-auto leading-relaxed mt-6">
-                    Have questions or want to make a reservation? Our team is here to assist you. Reach out to us through any of the following methods, and we'll be happy to help you plan your stay.
+                    Have questions or want to make a reservation? Our team is here to assist you. Reach out to us through any of the following methods, and we&apos;ll be happy to help you plan your stay.
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-5xl items-start">

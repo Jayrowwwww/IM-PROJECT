@@ -22,7 +22,7 @@ export default function Cards() {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {Rooms.slice(0, 3).map((room) => (
+        {Rooms.map((room) => (
           <div 
             onClick={() => handleCardClick(room.slug)} 
             key={room.id} 

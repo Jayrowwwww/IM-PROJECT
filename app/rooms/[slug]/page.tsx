@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { Rooms } from "@/lib/Rooms";
 import { notFound } from "next/navigation";
 import BookButton from "@/components/ui/buttons/Book";
+import BreadCrumb from "@/components/features/rooms/RoomSlug/ui/BreadCrumbs";
 
 export default async function RoomDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
@@ -13,8 +15,9 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ slu
     return (
         <main className="min-h-screen bg-[#04080a] text-white pt-32 pb-24 px-6 md:px-20">
             <div className="max-w-6xl mx-auto flex flex-col gap-16">
+                <BreadCrumb roomName={room.name} />
                 <div className="relative w-full h-[60vh] rounded overflow-hidden shadow-2xl">
-                    <img 
+                    <Image 
                         src={room.image} 
                         alt={room.name} 
                         className="object-cover w-full h-full"
